@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <link rel="stylesheet" href="normalize.css">
@@ -13,68 +13,157 @@
 </head>
 <body>
 
-  Features
-  Team
-  Sign In
+  <header class="header">
+    <nav class="nav main-nav">
+      <a class="main-nav__logo" href="/">
+        <img class="brand main-nav__brand" src="./assets/images/logo.svg" alt="Fylo">
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/">Features</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/">Team</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="/">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  All your files in one secure location, accessible anywhere.
+  <main class="main">
+    <div class="intro">
+      <img class="intro__image image" src="./assets/images/illustration-1.svg" alt="">
+      <section class="intro__text-content">
+        <h1 class="heading intro__heading">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="intro__text">
+          Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.
+        </p>
+        <form class="intro__form" novalidate="true">
+          <input class="intro__input" type="email" placeholder="Enter your email..." required>
+          <button class="button intro__button" type="submit">
+            Get Started
+          </button>
+        </form>
+      </section>
+    </div>
 
-  Fylo stores your most important files in one secure location.
-  Access them wherever you need, share and collaborate with friends,
-  family, and co-workers.
+    <div class="about">
+      <img class="about__image image" src="./assets/images/illustration-2.svg" alt="">
+      <section class="about__text-content">
+        <h2 class="heading about__heading">
+          Stay productive, wherever you are
+        </h2>
+        <p class="about__text">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="about__text">
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+        <p class="about__text">
+          <a class="about__anchor" href="/">
+            See how Fylo works <img class="text-icon" src="./assets/images/icon-arrow.svg" alt="">
+          </a>
+        </p>
 
-  Get Started
+        <blockquote class="quotation">
+          <img class="quotation__quotation-mark" src="./assets/images/icon-quotes.svg" alt="">
+          <p class="quotation__text">
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <footer class="quotation__description">
+            <img class="quotation__avatar" src="./assets/images/avatar-testimonial.jpg" alt="">
+            <div class="quotation__reference">
+              <p class="quotation__referenced-person">Kyle Burton</p>
+              <p class="quotation__position">Founder & CEO, Huddle</p>
+            </div>
+          </footer>
+        </blockquote>
+      </section>
+    </div>
 
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous.
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
+    <section class="cta">
+      <h2 class="heading cta__heading">
+        Get early access today
+      </h2>
+      <p class="main__text cta__text">
+        It only takes a minute to sign up and our free starter tier is extremely generous.
+        If you have any questions, our support team would be happy to help you.
+      </p>
+      <form class="cta__form" novalidate="true">
+        <input class="cta__input" type="text" placeholder="example@example.com" required>
+        <button class="button cta__button" type="submit">
+          Get Started For Free
+        </button>
+      </form>
+    </section>
+  </main>
 
   <footer class="footer">
-    <div class="socials">
-      <a class="socials__icon-container" href="https://www.facebook.com/" target="_blank">
-        <span class="socials__icon fab fa-facebook-f"></span>
-      </a>
-      <a class="socials__icon-container" href="https://twitter.com/" target="_blank">
-        <span class="socials__icon fab fa-twitter"></span>
-      </a>
-      <a class="socials__icon-container" href="https://www.instagram.com/" target="_blank">
-        <span class="socials__icon fab fa-instagram"></span>
-      </a>
-    </div>
-    <p class="attribution">
-      Challenge by <a	class="attribution__anchor"	href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="attribution__anchor" href="https://github.com/Samolote" target="_blank">Samolote</a>.
-    </p>
+    <nav class="footer__nav nav">
+      <img class="brand footer__logo" src="./assets/images/logo.svg" alt="Fylo">
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          <img src="./assets/images/icon-phone.svg" alt="">
+          Phone: +1-543-123-4567
+        </li>
+        <li class="footer__item">
+          <img src="./assets/images/icon-email.svg" alt="">
+          example@fylo.com
+        </li>
+      </ul>
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          About Us
+        </li>
+        <li class="footer__item">
+          Jobs
+        </li>
+        <li class="footer__item">
+          Press
+        </li>
+        <li class="footer__item">
+          Blog
+        </li>
+      </ul>
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          Contact Us
+        </li>
+        <li class="footer__item">
+          Terms
+        </li>
+        <li class="footer__item">
+          Privacy
+        </li>
+      </ul>
+
+      <div class="socials">
+        <a class="socials__icon-container" href="https://www.facebook.com/" target="_blank">
+          <span class="socials__icon fab fa-facebook-f"></span>
+        </a>
+        <a class="socials__icon-container" href="https://twitter.com/" target="_blank">
+          <span class="socials__icon fab fa-twitter"></span>
+        </a>
+        <a class="socials__icon-container" href="https://www.instagram.com/" target="_blank">
+          <span class="socials__icon fab fa-instagram"></span>
+        </a>
+      </div>
+      <p class="attribution">
+        Challenge by <a	class="attribution__anchor"	href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="attribution__anchor" href="https://github.com/Samolote" target="_blank">Samolote</a>.
+      </p>
+    </nav>
   </footer>
 </body>
 </html>
