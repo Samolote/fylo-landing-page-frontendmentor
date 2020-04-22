@@ -338,7 +338,7 @@ html {
 }
 
 .footer__brand {
-	/* How do I make this thing white? */
+	filter: brightness(0) invert(1);
 }
 
 .footer__list {
