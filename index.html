@@ -42,7 +42,7 @@
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.
         </p>
-        <form class="intro__form" novalidate="true">
+        <form class="form intro__form">
           <input class="intro__input" type="email" placeholder="Enter your email..." required>
           <button class="button intro__button" type="submit">
             Get Started
@@ -85,26 +85,29 @@
         </blockquote>
       </section>
     </div>
-    <section class="cta">
-      <h2 class="heading cta__heading">
-        Get early access today
-      </h2>
-      <p class="main__text cta__text">
-        It only takes a minute to sign up and our free starter tier is extremely generous.
-        If you have any questions, our support team would be happy to help you.
-      </p>
-      <form class="cta__form" novalidate="true">
+    <div class="cta">
+      <section class="cta__section">
+        <h2 class="heading cta__heading">
+          Get early access today
+        </h2>
+        <p class="main__text cta__text">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </section>
+      <form class="form cta__form">
         <input class="cta__input" type="text" placeholder="example@example.com" required>
         <button class="button cta__button" type="submit">
           Get Started For Free
         </button>
       </form>
-    </section>
+    </div>
   </main>
   <footer class="footer">
     <nav class="footer__nav nav">
-      <img class="brand footer__brand" src="./assets/images/logo.svg" alt="Fylo">
-
+      <div class="footer__brand-container">
+        <img class="brand footer__brand" src="./assets/images/logo.svg" alt="Fylo">
+      </div>
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link" href="/">
