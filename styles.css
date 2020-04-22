@@ -473,6 +473,12 @@ html {
 	display: block;
 }
 
+.intro__button,
+.cta__input,
+.cta__button {
+	box-shadow: 0.1rem 0.1rem 0.5rem -0.25rem var(--primary-color);
+}
+
 @media (min-width: 355px) {
 	.main-nav__brand {
 		width: 5rem;
